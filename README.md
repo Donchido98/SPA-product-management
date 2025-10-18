@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Product Management SPA
+A modern single-page application for operations users to browse, filter, and manage products. Built with React, featuring pagination, advanced filtering, and responsive design. which has the following features
 
-## Getting Started
+Product Listing with pagination (10 items per page)
+Advanced Filtering by product name. brand, and category
+Search by product name
+Sorting by creation date (newest/oldest)
+Product Details view with comprehensive information
+Responsive Design for mobile and desktop
+Accessible UI with keyboard navigation and semantic HTML
+Error & Loading States functionality
+Authentication Mock with token-based route protection
+Product Analytics with trend charts by brand
 
-First, run the development server:
+Tech Stack
 
-```bash
+Frontend Framework: React 18+ with Hooks
+Routing: React Router v6
+Data Fetching & Caching: React Query (TanStack Query)
+Styling: Tailwind CSS
+Charts: Recharts
+Form Validation: Zod
+Testing: Vitest + React Testing Library
+Build Tool: next.js
+Language: TypeScript
+
+Installation:
+
+git clone https://github.com/yourusername/product-spa.git
+cd product-spa
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Testing:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project includes a test suite with React Testing Library.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Run tests
+npm run test
 
-## Learn More
+Accessibility Checklist
 
-To learn more about Next.js, take a look at the following resources:
+✅ Keyboard navigation (Tab, Shift+Tab, Enter, Escape)
+✅ Focus indicators visible on all interactive elements
+✅ Semantic HTML (main, nav, section, table, form)
+✅ ARIA labels on buttons and form controls
+✅ Form error messages linked with aria-describedby
+✅ Images have alt text
+✅ Color not sole indicator (uses icons + text)
+✅ Contrast ratio meets WCAG AA standard
+✅ Mobile responsive (tested on 320px–1920px)
+✅ Touch targets min 44×44px
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# login in
+Enter any details to logina and access the dashboard

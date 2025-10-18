@@ -18,10 +18,11 @@
         "name": "next"
       }
     ],
+    "types": ["jest", "node"],
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/data/products.ts", "src/hooks/useProduct.js", "babel.config.js"],
   "exclude": ["node_modules"]
 }
